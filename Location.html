@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Location</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbMFINepzeyo1Iu8teXHPzpsuuDXfUl7o&callback=initMap"></script>
+<script>
+function initialize()
+{
+    var mapProp = {
+        center:new google.maps.LatLng(30.5542990, 114.3165130),
+        zoom:10,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+
+    <!-- 顶部图片的盒子 -->
+    <div class="box-top w">
+        <lu class="kuai">
+            <li>
+                <img src="https://www.imapac.com/wp-content/uploads/2020/01/travel-3322477_1280-730x254.jpg" />
+            </li>
+            <li>
+                <img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/08-04-20-Wuhan-cherry-blossoms-file.jpg/image1170x530cropped.jpg" />
+            </li>
+            <li>
+                <img src="https://s.rfi.fr/media/display/2763b8a8-56e5-11ea-9713-005056a964fe/zhys.jpg" />
+            </li>
+            <li>
+                <img src="https://img1.jiemian.com/101/original/20210630/162501617942167900_a640x364.jpeg" />
+            </li>
+            <li>
+                <img src="http://news.winshang.com/member/FCK/2020/1/8/202018105231236746.jpg" />
+            </li>
+
+        </lu>
+    </div>
+
+    <!-- 导航栏部分开始了 -->
+    <div class="box-nav w">
+        <ul>
+            <li class="xz">
+                <a href="index.html">Home</a></li>
+            <li class="xz">
+                <a href="History.html">History</a></li>
+            <li class="xz">
+                <a href="Scenery.html">Scenery</a></li>
+            <li class="xz">
+                <a href="Location.html">Location</a></li>
+            <li class="xz">
+                <a href="Weather.html">Weather</a></li>
+            <li class="xz">
+                <a href="Landmarks.html">Landmarks</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 主体部分 -->
+    <div class="box-main w">
+
+    <div id="googleMap" style="width:1000;height:600px; border-radius:20px"></div>
+    
+
+
+        <!-- 空标签清除浮动 -->
+        <!-- 空标签清除浮动 -->
+        <div style="clear: both;"></div>
+
+
+    </div>
+
+
+    <!-- 外链部分 -->
+    <!-- 外链部分 -->
+    <!-- 外链部分 -->
+    <div class="wl w">
+        <h1>External links</h1>
+        <br>
+        <ul>
+            <li>
+                <a href="http://www.wuhan.gov.cn/">Wuhan Government</a>
+            </li>
+            <li>
+                <a href="http://wlj.wuhan.gov.cn/">Wuhan Tourism Bureau</a>
+            </li>
+            <li>
+                <a href="http://tjj.wuhan.gov.cn/">Wuhan Statistics Bureau</a>
+            </li>
+        </ul>
+        <br>
+
+
+    </div>
+
+
+    </div>
+    <!-- 页脚部分 -->
+    <div class="footer">
+        <p>Copyright © 2021 IT817 Web Development Nathan Yin
+            <br>IE9 or above is recommended
+        </p>
+    </div>
+
+
+
+</body>
+
+
+</html>
+
